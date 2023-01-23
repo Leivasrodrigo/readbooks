@@ -1,12 +1,3 @@
-[
-  {
-      "id": "001151364",
-      "title": "Hamlet",
-      "author": "William Shakespeare",
-      "rating": 2,
-      "read": true,
-      "pages": 474 
-    },
   {
       "id": "001188674",
       "title": "Tintim no Tibete",
@@ -15,4 +6,3 @@
       "read": true,
       "pages": 64 
     }
-]
