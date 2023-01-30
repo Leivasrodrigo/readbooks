@@ -6,8 +6,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func Router() {
-	router := gin.Default()
+func RouterApp(router *gin.Engine) {
 	router.GET("/books", handlers.GetBooks)
 	router.GET("/books/:id", handlers.BookById)
 	router.GET("/ratingLower", handlers.OrderByRatingDecreasing)
@@ -17,5 +16,4 @@ func Router() {
 	router.POST("/books", handlers.CreateBook)
 	router.PATCH("/lowerRating", handlers.LowerRating)
 	router.PATCH("/raiseRating", handlers.RaiseRating)
-	router.Run(":8000")
 }
